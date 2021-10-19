@@ -1,7 +1,9 @@
 # Franka Emika Panda Matlab Simulation
 
 - real_data : Franka emika panda robot actual data files
+
 - model : Franka emika panda robot model library folder
+
   + get_CoriolisMatrix.m : Coriolis matrix function <img src="https://render.githubusercontent.com/render/math?math=\C(\q,\dot{\q})&mode=inline"> [1]
   + get_CoriolisVector.m : Coriolis vector function <img src="https://render.githubusercontent.com/render/math?math=\C(\q,\dot{\q})\dot{\q}&mode=inline"> [1] 
   + get_FrictionTorque.m : Friction torque function <img src="https://render.githubusercontent.com/render/math?math=\F(\dot{\q})&mode=inline"> [1]
