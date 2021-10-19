@@ -17,8 +17,6 @@
 - main_impedance_control.m : Cartesian Impedance Controller Code
 - main_simple_pd_control.m : Simple PD controller code
 
-//
-//
 > [1] *Gaz, Claudio, et al. "Dynamic identification of the* *franka* *emika* *panda robot with retrieval of feasible parameters using penalty-based optimization." IEEE Robotics and Automation Letters 4.4 (2019): 4147-4154.*
 >
 > (*https://github.com/marcocognetti/FrankaEmikaPandaDynModel*)
