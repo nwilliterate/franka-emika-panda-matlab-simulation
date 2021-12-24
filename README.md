@@ -1,5 +1,9 @@
 # Franka Emika Panda Matlab Simulation
 
+> Authors:	Seonghyeon Jo(cpsc.seonghyeon@gmail.com)
+> 
+> Date:		 Des, 24, 2021
+
 This repository is a MATLAB simulation of franka emika panda robot control using Runge-Kutta. The robot manipulator dynamic model (M, C, G, F) uses the functions provided in [1]. The kinematic function matches the actual panda robot data. However, Jacobian's derivative and Jacobian have some errors.
 
 
