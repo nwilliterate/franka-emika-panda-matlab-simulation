@@ -35,13 +35,13 @@ This repository is a MATLAB simulation of franka emika panda robot control using
 ## Controller
 - simple pd controller
 
-<img src="./fig/control_simplePD_playback.png" alt="control_simplePD_playback"  width="350" /> 
+<img src="./fig/control_simplePD_playback.png" alt="control_simplePD_playback"  width="375" /> 
 - catesian pd controller
 
-<img src="./fig/control_catesianPD_playback.png" alt="control_catesianPD_playback"  width="350" /> 
+<img src="./fig/control_catesianPD_playback.png" alt="control_catesianPD_playback"  width="375" /> 
 - position based impendace controller
 
-<img src="./fig/control_catesian_imp.png" alt="control_catesian_imp"  width="350" /> 
+<img src="./fig/control_catesian_imp.png" alt="control_catesian_imp"  width="375" /> 
 
 
  ## Kinematics Test
@@ -79,7 +79,7 @@ R = Ti{n}(1:3,1:3);
 
 - kinematics test plot
 
-<img src="./fig/kin_test1.png" alt="kin_test1"  width="350" />  <img src="./fig/kin_test2.png" alt="kin_test2" width="350" />
+<img src="./fig/kin_test1.png" alt="kin_test1"  width="375" />  <img src="./fig/kin_test2.png" alt="kin_test2" width="375" />
 
 
  ##  Jacobian Test
@@ -118,9 +118,9 @@ alt="\ddot{x} = J(q)\ddot{q} +\dot{J}(q,\dot{q})\dot{q}">
 
 - jacobain dot test plot
 
-<img src="./fig/Jac_dot_test_simple_test.png" alt="Jac_dot_test_simple_test"  width="350" /> <img src="./fig/Jac_dot_test_joint1~7 movement.png" alt="Jac_dot_test_joint1~7 movement"  width="350" />
+<img src="./fig/Jac_dot_test_simple_test.png" alt="Jac_dot_test_simple_test"  width="375" /> <img src="./fig/Jac_dot_test_joint1~7 movement.png" alt="Jac_dot_test_joint1~7 movement"  width="375" />
 
-<img src="./fig/Jac_dot_test_joint5 movement.png" alt="Jac_dot_test_joint5 movement"  width="350" /> <img src="./fig/Jac_dot_test_joint7 movement.png" alt="Jac_dot_test_joint7 movement"  width="350" />
+<img src="./fig/Jac_dot_test_joint5 movement.png" alt="Jac_dot_test_joint5 movement"  width="375" /> <img src="./fig/Jac_dot_test_joint7 movement.png" alt="Jac_dot_test_joint7 movement"  width="375" />
 
 
 
