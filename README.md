@@ -41,11 +41,29 @@ This repository is a MATLAB simulation of franka emika panda robot control using
 
 - Modified DH parameters
 <img src=
-"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%7D%0A%7B%7D+%5E%7Bi-1%7D+T_%7Bi%7D+%26%3D+%5Coperatorname%7Brot%7D_%7Bx%2C%5Calpha_%7Bi-1%7D%7D+%5Coperatorname%7Btrans%7D_%7Bx%2Ca_%7Bi-1%7D%7D%5Coperatorname+%7Brot%7D_%7Bz%2C%5Cthata_%7Bi%7D%7D+%5Coperatorname%7Btrans%7D_%7Bz%2Cd_%7Bi%7D%7D+%5Cnonumber%5C%5C%0A%26%3D+%5Cleft%5B%7B%5Cbegin%7Barray%7D%7Bccc%7Cc%7D%5Ccos+%5Ctheta+_%7Bi%7D+%26+-%5Csin+%5Ctheta+_%7Bi%7D+%26+0+%26+a_%7Bi-1%7D%5C%5C+%5Csin+%5Ctheta+_%7Bi%7D%5Ccos+%5Calpha+_%7Bi-1%7D+%26+%5Ccos+%5Ctheta+_%7Bi%7D%5Ccos+%5Calpha+_%7Bi-1%7D+%26+-%5Csin+%5Calpha+_%7Bi-1%7D+%26+-d_%7Bi%7D%5Csin+%5Calpha+_%7Bi-1%7D%5C%5C%5Csin+%5Ctheta+_%7Bi%7D%5Csin+%5Calpha+_%7Bi-1%7D+%26+%5Ccos+%5Ctheta+_%7Bi%7D%5Csin+%5Calpha+_%7Bi-1%7D+%26+%5Ccos+%5Calpha+_%7Bi-1%7D+%26+d_%7Bi%7D%5Ccos+%5Calpha+_%7Bi-1%7D%5C%5C%5Chline+0+%26+0+%26+0+%26+1%5Cend%7Barray%7D%7D%5Cright%5D%0A%5Cend%7Balign%7D+" 
-alt="\begin{align}
-{} ^{i-1} T_{i} &= \operatorname{rot}_{x,\alpha_{i-1}} \operatorname{trans}_{x,a_{i-1}}\operatorname {rot}_{z,\thata_{i}} \operatorname{trans}_{z,d_{i}} \nonumber\\
-&= \left[{\begin{array}{ccc|c}\cos \theta _{i} & -\sin \theta _{i} & 0 & a_{i-1}\\ \sin \theta _{i}\cos \alpha _{i-1} & \cos \theta _{i}\cos \alpha _{i-1} & -\sin \alpha _{i-1} & -d_{i}\sin \alpha _{i-1}\\\sin \theta _{i}\sin \alpha _{i-1} & \cos \theta _{i}\sin \alpha _{i-1} & \cos \alpha _{i-1} & d_{i}\cos \alpha _{i-1}\\\hline 0 & 0 & 0 & 1\end{array}}\right]
-\end{align} ">
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%7B%7D+%5E%7Bi-1%7D+T_%7Bi%7D+%3D+%5Ctext%7Brot%7D_%7Bx%2C%5Calpha_%7Bi-1%7D%7D+%5Ctext%7Btrans%7D_%7Bx%2Ca_%7Bi-1%7D%7D%5Ctext%7Brot%7D_%7Bz%2C%5Cthata_%7Bi%7D%7D+%5Ctext%7Btrans%7D_%7Bz%2Cd_%7Bi%7D%7D+" 
+alt="{} ^{i-1} T_{i} = \text{rot}_{x,\alpha_{i-1}} \text{trans}_{x,a_{i-1}}\text{rot}_{z,\thata_{i}} \text{trans}_{z,d_{i}} ">
+
+<img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%7B%7D+%5E%7Bi-1%7D+T_%7Bi%7D+%3D+%5Cleft%5B%7B%5Cbegin%7Barray%7D%7Bccc%7Cc%7D%5Ccos+%5Ctheta+_%7Bi%7D+%26+-%5Csin+%5Ctheta+_%7Bi%7D+%26+0+%26+a_%7Bi-1%7D%5C%5C+%5Csin+%5Ctheta+_%7Bi%7D%5Ccos+%5Calpha+_%7Bi-1%7D+%26+%5Ccos+%5Ctheta+_%7Bi%7D%5Ccos+%5Calpha+_%7Bi-1%7D+%26+-%5Csin+%5Calpha+_%7Bi-1%7D+%26+-d_%7Bi%7D%5Csin+%5Calpha+_%7Bi-1%7D%5C%5C%5Csin+%5Ctheta+_%7Bi%7D%5Csin+%5Calpha+_%7Bi-1%7D+%26+%5Ccos+%5Ctheta+_%7Bi%7D%5Csin+%5Calpha+_%7Bi-1%7D+%26+%5Ccos+%5Calpha+_%7Bi-1%7D+%26+d_%7Bi%7D%5Ccos+%5Calpha+_%7Bi-1%7D%5C%5C%5Chline+0+%26+0+%26+0+%26+1%5Cend%7Barray%7D%7D%5Cright%5D" 
+alt="{} ^{i-1} T_{i} = \left[{\begin{array}{ccc|c}\cos \theta _{i} & -\sin \theta _{i} & 0 & a_{i-1}\\ \sin \theta _{i}\cos \alpha _{i-1} & \cos \theta _{i}\cos \alpha _{i-1} & -\sin \alpha _{i-1} & -d_{i}\sin \alpha _{i-1}\\\sin \theta _{i}\sin \alpha _{i-1} & \cos \theta _{i}\sin \alpha _{i-1} & \cos \alpha _{i-1} & d_{i}\cos \alpha _{i-1}\\\hline 0 & 0 & 0 & 1\end{array}}\right]">
+
+```matlab
+Ti= cell(n,1); 
+for j=1:n
+    if(j == 1)
+        Ti{j} = Rhx(alpha(j)) * Rt(a(j), 0, 0)  * Rhz(q(j)) * Rt(0,0,d(j));
+    else
+        Ti{j} = Ti{j-1}*Rhx(alpha(j)) * Rt(a(j), 0, 0)  * Rhz(q(j)) * Rt(0,0,d(j));
+   end
+end
+p = Ti{n}(1:3,4);
+R = Ti{n}(1:3,1:3);
+```
+
+
+
+
 
 
 > [1] *Gaz, Claudio, et al. "Dynamic identification of the* *franka* *emika* *panda robot with retrieval of feasible parameters using penalty-based optimization." IEEE Robotics and Automation Letters 4.4 (2019): 4147-4154.*
