@@ -96,9 +96,24 @@ R = Ti{n}(1:3,1:3);
 ## jacobian derivative
 - Jacobian derivative test plot
 
-  > Cartesian second derivative :
-  > - real : 
-  > - data1: 
+  > Cartesian second derivative : <img src=
+"https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Cddot%7Bx%7D" 
+alt="\ddot{x}">
+  > - real : <img src=
+"https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Cdot%7BJ%7D%5Cddot%7Bq%7D" 
+alt="\dot{J}\ddot{q}">
+  > - com: <img src=
+"https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Chat%5Cdot%7BJ%7D%5Cddot%7Bq%7D" 
+alt="\hat\dot{J}\ddot{q}"> 
+
+- jacobain dot test plot
+
+<img src="./fig/Jac_dot_test_simple_test.png" alt="Jac_dot_test_simple_test"  width="450" /> <img src="./fig/Jac_dot_test_joint1~7 movement.png" alt="Jac_dot_test_joint1~7 movement"  width="450" />
+
+<img src="./fig/Jac_dot_test_joint5 movement.png" alt="Jac_dot_test_joint5 movement"  width="450" /> <img src="./fig/Jac_dot_test_joint7 movement.png" alt="Jac_dot_test_joint7 movement"  width="450" />
+
+
+
 
 
 > [1] *Gaz, Claudio, et al. "Dynamic identification of the* *franka* *emika* *panda robot with retrieval of feasible parameters using penalty-based optimization." IEEE Robotics and Automation Letters 4.4 (2019): 4147-4154.*
