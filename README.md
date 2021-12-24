@@ -70,22 +70,19 @@ R = Ti{n}(1:3,1:3);
 
 - Jacobian test plot
 
-  > Cartesian derivative  <img src=
-  > "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Cdot%7Bx%7D" 
-  > alt="\dot{x}">
+  > Cartesian derivative(real) :  <img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cdot%7Bx%7D+%3D+J%28q%29%5Cdot%7Bq%7D" 
+alt="\dot{x} = J(q)\dot{q}">
   >
-  > - real : <img src=
-  > "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+J%5Cdot%7Bq%7D" 
-  > alt="J\dot{q}">
   > - data1: <img src=
-  >   "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+q+%5Crightarrow+x+++%5Crightarrow+%5Cdot%7Bx%7D" 
-  >   alt="q \rightarrow x   \rightarrow \dot{x}">
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cdot%7Bx%7D+%3D+%28k%28q%29_%7Bt%2B1%7D-k%28q%29_%7Bt%7D%29%5CDelta+t" 
+alt="\dot{x} = (k(q)_{t+1}-k(q)_{t})\Delta t">
   > - data2:<img src=
-  >   "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+x+++%5Crightarrow+%5Cdot%7Bx%7D" 
-  >   alt="x   \rightarrow \dot{x}">
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cdot%7Bx%7D+%3D+%28x_%7Bt%2B1%7D-x_%7Bt%7D%29%5CDelta+t" 
+alt="\dot{x} = (x_{t+1}-x_{t})\Delta t">
   > - data3:<img src=
-  >   "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Chat%7BJ%7D%5Cdot%7Bq%7D" 
-  >   alt="\hat{J}\dot{q}">
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cdot%7Bx%7D+%3D+%5Chat%7BJ%7D%28q%29%5Cdot%7Bq%7D" 
+alt="\dot{x} = \hat{J}(q)\dot{q}">
 
 - jacobain test plot
 
@@ -96,15 +93,12 @@ R = Ti{n}(1:3,1:3);
 ## jacobian derivative
 - Jacobian derivative test plot
 
-  > Cartesian second derivative : <img src=
-"https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Cddot%7Bx%7D" 
-alt="\ddot{x}">
-  > - real : <img src=
-"https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Cdot%7BJ%7D%5Cddot%7Bq%7D" 
-alt="\dot{J}\ddot{q}">
+  > Cartesian second derivative(real) : <img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cddot%7Bx%7D+%3D+%28%5Cdot%7Bx%7D_%7Bt%2B1%7D-%5Cdot%7Bx%7D_%7Bt%7D%29%5CDelta+t" 
+alt="\ddot{x} = (\dot{x}_{t+1}-\dot{x}_{t})\Delta t">
   > - com: <img src=
-"https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Chat%5Cdot%7BJ%7D%5Cddot%7Bq%7D" 
-alt="\hat\dot{J}\ddot{q}"> 
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cddot%7Bx%7D+%3D+J%28q%29%5Cddot%7Bq%7D+%2B%5Cdot%7BJ%7D%28q%2C%5Cdot%7Bq%7D%29%5Cdot%7Bq%7D" 
+alt="\ddot{x} = J(q)\ddot{q} +\dot{J}(q,\dot{q})\dot{q}">
 
 - jacobain dot test plot
 
