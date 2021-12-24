@@ -20,13 +20,26 @@ This repository is a MATLAB simulation of franka emika panda robot control using
   + simple_plant.m :  robot manipulator plant 함수 <img src="https://render.githubusercontent.com/render/math?math=\ddot{\q}%20=%20\M^{-1}(\q)(\boldsymbol\tau)&mode=inline">
   + rk.m /simple_rk.m :  Runge-Kutta 함수
 
-- main_cartesian_pd_control.m : Cartesian PD controller code
+- 0. test_model_kinematics.m : kinematics test code
 
-- main_impedance_control.m : Cartesian Impedance Controller Code
+- 0. test_model_jacobain.m : jacobian test Code
 
-- main_simple_pd_control.m : Simple PD controller code
+- 0. test_model_dot_jacobain.m : jacobian dot  test Code
 
- 
+- 1. main_cartesian_pd_control_playback.m : Cartesian PD controller code
+
+- 1. main_impedance_control.m : Cartesian Impedance Controller Code
+
+- 1. main_simple_pd_control_playback.m : Simple PD controller code
+
+## Controller
+- simple pd controller
+- <img src="./fig/control_simplePD_playback.png" alt="control_simplePD_playback"  width="450" /> 
+- catesian pd controller
+- <img src="./fig/control_catesianPD_playback.png" alt="control_catesianPD_playback"  width="450" /> 
+- position based impendace controller
+- <img src="./fig/control_catesian_imp.png" alt="control_catesian_imp"  width="450" /> 
+
 
  ## Kinematics Test
 
