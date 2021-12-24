@@ -16,10 +16,10 @@ clc; clear;
 addpath(genpath('.'));
 folder_name = "real_data\";
 
-real_q = table2array(readtable(folder_name+"[210618]joint_postion_data.csv"));
-real_dq = table2array(readtable(folder_name+"[210618]joint_velocity_data.csv"));
-real_x = table2array(readtable(folder_name+"[210618]cartesian_data.csv"));
-real_jac_dq = table2array(readtable(folder_name+"[210618]jacobian_velocity_mul_data.csv"));
+real_q = table2array(readtable(folder_name+"[210618]joint_postion.csv"));
+real_dq = table2array(readtable(folder_name+"[210618]joint_velocity.csv"));
+real_x = table2array(readtable(folder_name+"[210618]cartesian_quat.csv"));
+real_jac_dq = table2array(readtable(folder_name+"[210618]jac_vel_product.csv"));
 
 % data 1: real_q -> x_dot
 sample_size = length(real_q)-1;
@@ -114,5 +114,5 @@ legend('real', 'data1','data2','data3')
 lgd = legend;
 lgd.Layout.Tile = 9;
 lgd.FontSize = 11;
-saveas(gcf,'fig\Jac_test1.eps','epsc');
+saveas(gcf,'fig\Jac_test1.png','epsc');
 

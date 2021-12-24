@@ -13,7 +13,7 @@
 %% Data load
 clc; clear;
 addpath(genpath('.'));
-task_index = 4;
+task_index = 1;
 
 % Data Load
 folder_name = "real_data\";
@@ -98,6 +98,9 @@ for i=1:6
     hold on
     plot(t, com_ddx(:,i),'--r','LineWidth',1.5)
     xlim([t(1) t(sample_size)]);
+    if i == 4
+        ylim([-pi/2 pi/2])
+    end
     xlabel('Time (sec)', 'FontSize', 10)
     ylabel(ylabel_name{i}, 'FontSize', 10);
     grid on
@@ -107,5 +110,5 @@ lgd = legend;
 lgd.Layout.Tile = 9;
 lgd.Layout.Tile = 9;
 lgd.FontSize = 11;
-fig_name = "fig\Jac_dot_test_"+test_name+".eps";
+fig_name = "fig\Jac_dot_test_"+test_name+".png";
 saveas(gcf,fig_name,'epsc');
