@@ -62,7 +62,8 @@ R = Ti{n}(1:3,1:3);
 ```
 
 - kinematics test plot
-<img src="./fig/kin_test1.png" alt="kin_test1"  width="50%"  height="50%" />  <img src="./fig/kin_test2.png" alt="kin_test2" width="50%"  height="50%" />
+
+<img src="./fig/kin_test1.png" alt="kin_test1"  width="450" />  <img src="./fig/kin_test2.png" alt="kin_test2" width="450" />
 
 
  ##  Jacobian Test
@@ -87,13 +88,10 @@ R = Ti{n}(1:3,1:3);
   >   alt="\hat{J}\dot{q}">
 
 - jacobain test plot
-<img src="./fig/Jac_test_simple_test.png" alt="Jac_test_simple_test" style="zoom: 50%;" />
 
-<img src="./fig/Jac_dot_test_joint1~7 movement.png" alt="Jac_test_joint1~7 movement" style="zoom: 50%;" />
+<img src="./fig/Jac_test_simple_test.png" alt="Jac_test_simple_test"  width="450" /> <img src="./fig/Jac_test_joint1~7 movement.png" alt="Jac_test_joint1~7 movement"  width="450" />
 
-<img src="./fig/Jac_test_joint5 movement.png" alt="Jac_test_joint5 movement" style="zoom: 50%;" />
-
-<img src="./fig/Jac_test_joint7 movement.png" alt="Jac_test_joint7 movement" style="zoom: 50%;" />
+<img src="./fig/Jac_test_joint5 movement.png" alt="Jac_test_joint5 movement"  width="450" /> <img src="./fig/Jac_test_joint7 movement.png" alt="Jac_test_joint7 movement"  width="450" />
 
 ## jacobian derivative
 - Jacobian derivative test plot
