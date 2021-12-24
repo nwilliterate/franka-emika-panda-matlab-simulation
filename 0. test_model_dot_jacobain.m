@@ -13,7 +13,7 @@
 %% Data load
 clc; clear;
 addpath(genpath('.'));
-task_index = 1;
+task_index = 4;
 
 % Data Load
 folder_name = "real_data\";
@@ -111,4 +111,4 @@ lgd.Layout.Tile = 9;
 lgd.Layout.Tile = 9;
 lgd.FontSize = 11;
 fig_name = "fig\Jac_dot_test_"+test_name+".png";
-saveas(gcf,fig_name,'epsc');
+saveas(gcf,fig_name);

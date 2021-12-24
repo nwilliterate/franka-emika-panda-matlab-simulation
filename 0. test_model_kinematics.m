@@ -53,7 +53,7 @@ end
 legend('real','cal')
 lgd = legend;
 lgd.Layout.Tile = 8;
-saveas(gcf,'fig\kin_test1.png','epsc');
+saveas(gcf,'fig\kin_test1.png');
 
 % figure 2 : 3D Plot 
 figure(2)
@@ -70,4 +70,4 @@ axis([ax.XLim(1)-r ax.XLim(2)+r ax.YLim(1)-r ax.YLim(2)+r ax.ZLim(1)-r ax.ZLim(2
 xlabel('P_x(m)','FontSize', 12);
 ylabel('P_y(m)','FontSize', 12);
 zlabel('P_z(m)','FontSize', 12);
-saveas(gcf,'fig\kin_test2.png','epsc');
+saveas(gcf,'fig\kin_test2.png');

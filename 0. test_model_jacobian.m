@@ -114,5 +114,5 @@ legend('real', 'data1','data2','data3')
 lgd = legend;
 lgd.Layout.Tile = 9;
 lgd.FontSize = 11;
-saveas(gcf,'fig\Jac_test1.png','epsc');
+saveas(gcf,'fig\Jac_test1.png');
 
