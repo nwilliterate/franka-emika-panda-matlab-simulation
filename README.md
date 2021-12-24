@@ -63,6 +63,10 @@ R = Ti{n}(1:3,1:3);
 
 
 
+![kin_test1](./fig/kin_test1.png)
+
+![kin_test2](./fig/kin_test2.png)
+
 
 
 
