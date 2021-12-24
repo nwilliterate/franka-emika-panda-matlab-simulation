@@ -61,13 +61,46 @@ p = Ti{n}(1:3,4);
 R = Ti{n}(1:3,1:3);
 ```
 
+- kinematics test plot
+<img src="./fig/kin_test1.png" alt="kin_test1" style="zoom: 50%;" /> <img src="./fig/kin_test2.png" alt="kin_test2" style="zoom: 50%;" />
 
 
-![kin_test1](./fig/kin_test1.png)
+ ##  Jacobian Test
 
-![kin_test2](./fig/kin_test2.png)
+- Jacobian test plot
 
+  > Cartesian derivative  <img src=
+  > "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Cdot%7Bx%7D" 
+  > alt="\dot{x}">
+  >
+  > - real : <img src=
+  > "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+J%5Cdot%7Bq%7D" 
+  > alt="J\dot{q}">
+  > - data1: <img src=
+  >   "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+q+%5Crightarrow+x+++%5Crightarrow+%5Cdot%7Bx%7D" 
+  >   alt="q \rightarrow x   \rightarrow \dot{x}">
+  > - data2:<img src=
+  >   "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+x+++%5Crightarrow+%5Cdot%7Bx%7D" 
+  >   alt="x   \rightarrow \dot{x}">
+  > - data3:<img src=
+  >   "https://render.githubusercontent.com/render/math?math=%5Ctextstyle+%5Chat%7BJ%7D%5Cdot%7Bq%7D" 
+  >   alt="\hat{J}\dot{q}">
 
+- jacobain test plot
+<img src="./fig/Jac_test_simple_test.png" alt="Jac_test_simple_test" style="zoom: 50%;" />
+
+<img src="./fig/Jac_test_joint1~7 movement" alt="Jac_test_joint1~7 movement" style="zoom: 50%;" />
+
+<img src="./fig/Jac_test_joint5 movement.png" alt="Jac_test_joint5 movement" style="zoom: 50%;" />
+
+<img src="./fig/Jac_test_joint7 movement.png" alt="Jac_test_joint7 movement" style="zoom: 50%;" />
+
+## jacobian derivative
+- Jacobian derivative test plot
+
+  > Cartesian second derivative :
+  > - real : 
+  > - data1: 
 
 
 > [1] *Gaz, Claudio, et al. "Dynamic identification of the* *franka* *emika* *panda robot with retrieval of feasible parameters using penalty-based optimization." IEEE Robotics and Automation Letters 4.4 (2019): 4147-4154.*

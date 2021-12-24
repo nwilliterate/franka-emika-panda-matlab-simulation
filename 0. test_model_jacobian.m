@@ -14,12 +14,29 @@
 % data load
 clc; clear;
 addpath(genpath('.'));
+task_index = 4;
+
+% Data Load
 folder_name = "real_data\";
 
-real_q = table2array(readtable(folder_name+"[210618]joint_postion.csv"));
-real_dq = table2array(readtable(folder_name+"[210618]joint_velocity.csv"));
-real_x = table2array(readtable(folder_name+"[210618]cartesian_quat.csv"));
-real_jac_dq = table2array(readtable(folder_name+"[210618]jac_vel_product.csv"));
+if task_index == 1
+    test_name = "simple_test";
+    time_line = "[210618]";
+elseif task_index == 2
+    test_name = "joint1~7 movement";
+    time_line = "[20210709-1411]franka_data_";
+elseif task_index == 3
+    test_name = "joint7 movement";
+    time_line = "[20210709-1436]franka_data_";
+elseif task_index == 4
+    test_name = "joint5 movement";
+    time_line = "[20210709-1437]franka_data_";
+end
+
+real_q = table2array(readtable(folder_name+time_line+"joint_postion.csv"));
+real_dq = table2array(readtable(folder_name+time_line+"joint_velocity.csv"));
+real_x = table2array(readtable(folder_name+time_line+"cartesian_quat.csv"));
+real_jac_dq = table2array(readtable(folder_name+time_line+"jac_vel_product.csv"));
 
 % data 1: real_q -> x_dot
 sample_size = length(real_q)-1;
@@ -105,14 +122,16 @@ for i=1:6
     plot(t, data2(1:sample_size-1,i),':r','LineWidth',1)
     plot(t, data3(1:sample_size-1,i),':b','LineWidth',1)
     xlim([t(1) t(sample_size-1)]);
+    if i == 4
+        ylim([-pi/4 pi/4])
+    end
     xlabel('Time (sec)', 'FontSize', 10)
     ylabel(ylabel_name{i}, 'FontSize', 10);
-    
     grid on
 end
 legend('real', 'data1','data2','data3')
 lgd = legend;
 lgd.Layout.Tile = 9;
 lgd.FontSize = 11;
-saveas(gcf,'fig\Jac_test1.png');
-
+fig_name = "fig\Jac_test_"+test_name+".png";
+saveas(gcf,fig_name);
