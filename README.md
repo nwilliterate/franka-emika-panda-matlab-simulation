@@ -102,9 +102,9 @@ alt="\dot{x} = \hat{J}(q)\dot{q}">
 
 - jacobain test plot
 
-<img src="./fig/Jac_test_simple_test.png" alt="Jac_test_simple_test"  width="450" /> <img src="./fig/Jac_test_joint1~7 movement.png" alt="Jac_test_joint1~7 movement"  width="450" />
+<img src="./fig/Jac_test_simple_test.png" alt="Jac_test_simple_test"  width="400" /> <img src="./fig/Jac_test_joint1~7 movement.png" alt="Jac_test_joint1~7 movement"  width="400" />
 
-<img src="./fig/Jac_test_joint5 movement.png" alt="Jac_test_joint5 movement"  width="450" /> <img src="./fig/Jac_test_joint7 movement.png" alt="Jac_test_joint7 movement"  width="450" />
+<img src="./fig/Jac_test_joint5 movement.png" alt="Jac_test_joint5 movement"  width="400" /> <img src="./fig/Jac_test_joint7 movement.png" alt="Jac_test_joint7 movement"  width="400" />
 
 ## jacobian derivative
 - Jacobian derivative test plot
